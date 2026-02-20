@@ -17,6 +17,7 @@ bool vectorComp(process a, process b){
 }
 
 bool pqComp(process a, process b){
+    if(a.remainingTime == b.remainingTime) return a.arrivalTime > b.arrivalTime;
     return a.remainingTime > b.remainingTime;
 }
 
